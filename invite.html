@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        div{
+            width:80%;
+            margin:auto;
+            margin-top:5%;
+            padding:10%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        input,button{
+            width:50%;
+            font-size:20px;
+            margin-top:10px;
+            margin-left: 25%;
+        }
+        img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="https://modesens.com/banner/12508/getimg/?img=%2Fbanner%2F20220616-modesens-Cettire-1140x400-EN.jpg" alt="">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter e-mail">
+            <button onClick="reply()">Send Invitation</button>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+    function reply() {
+			// Show the alert of the filled name
+            alert("Invitation Sent Successfully");
+		}
+
+
+
+
+    // let form=document.querySelector("form");
+    // let userData=JSON.parse(localStorage.getItem("userData")) || [];
+    // form.addEventListener("submit",function(){
+    //     event.preventDefault();
+    //     let data={
+    //         email:form.email.value,
+    //         password:form.password.value,
+    //     }
+    //     if(checkSignin(data.email,data.password)===true){
+    //         localStorage.setItem("signin",JSON.stringify(data));
+    //         alert("Sign in Successful");
+    //         window.location.href="index.html"
+    //     }else{
+    //         alert("Wrong Username or Password");
+    //     }
+    // })
+
+    // function  checkSignin(email,password){
+    //     let filter=userData.filter(function(element){
+    //         return element.email===email && element.password=== password;
+    //     })
+    //     if(filter.length>0){
+    //         return true;
+    //     }else{
+    //         return false;
+    //     }
+    // }
+</script>

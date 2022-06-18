@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Followed</title>
+    <style>
+        *{
+            width:100%;
+         margin:0px;
+         padding:0px;
+        }
+        #cover{
+            width:95%;
+            height:200px;
+            margin:auto;
+            background-image: url(https://cdn.modesens.com/banner/20220610-modesens-hashtag-1440x250-F.jpg);
+        }
+        #cover>div{
+         width: 50%;
+         text-align: center;
+         color:white;
+        }
+        /* .repeat{
+            display: flex;
+        }*/
+        .block{
+            /* margin-left:3%;
+            margin-bottom: 1%;
+            width:33%;
+            height: 20%; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5%;
+        }
+        .block>div:nth-child(1){
+          display:flex;
+        }
+        .block>div:nth-child(1)>div{
+            display:flex;
+        }
+        .image1{
+            border-radius: 100%;
+            margin:5px;
+            width:20%;      
+        }
+        .block>div>div{
+            align-items: center;
+        }
+        button{
+            margin:10px;
+            padding:10px;
+            font-weight: bold;
+        }/*
+        .normal_block>img{
+            width: 84%;
+            height:450px;
+            margin: 2% 8%;  
+        }
+
+
+        .four_block{
+            display: flex;
+            height:470px;
+        }
+        .four_block>div:nth-child(1){
+            width:75%;
+        }
+        .four_block>div:nth-child(1)>img{
+            width:90%;
+            height:80%;
+            margin:10% 5%;
+        }
+        .four_block>div:nth-child(2){
+            width:25%;
+        }
+        .four_block>div:nth-child(2)>div{
+            width:100%;
+            height:33%;
+        }
+        .four_block>div:nth-child(2)>div>img{
+            height:70%;
+            width:90%;
+            margin:15% 5%;
+        }*/
+
+        .top_block{
+            width:95%;
+            margin:0% 5%;
+            justify-content: space-between;
+        }
+        
+
+        /* #products{
+            
+            width:100%;
+        } */
+
+
+         /* *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        } */
+        #products{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:auto;
+            gap:10px 20px;
+        } 
+        .image2{
+            /* width:98%;
+            margin:auto; */
+            border-radius: 5%;
+        } 
+        #conatiner{
+            width:80%;
+            margin:2% 10%;
+        }
+        #tab{
+            width:80%;
+            display: flex;
+            margin: auto;
+        }
+        #tab>button{
+            background-color: grey;
+            font-weight: bold;
+            color:red;
+           border:none;
+           font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cover">
+    <div>
+        <h1 style="padding-top:8%; font-size:50px">Dreaming Of Ice Cream</h1>
+        <p style="font-size:35px">Fill up on #summercoolers</p>
+    </div>
+    </div>
+    <div id="tab">
+    <button id="following">Following</button>
+    <button id="discover">Discover</button>
+</div>
+    <!-- https://modesens.com/banner/12472/getimg/?img=%2Fbanner%2F20220617-modesens-Sale-1440x250-EN.jpg -->
+
+<!-- 6 -->
+<div id="conatiner">
+<div id="products"></div>
+</div>
+</body>
+</html>
+
+<script>
+    document.getElementById("discover").addEventListener("click",function(){
+            window.location.href="community.html";
+        });
+
+
+
+    let productData=[
+        {
+            img1:"https://cdn.modesens.com/uicon/276698-1596189133s?w=100&&",
+            img2:"https://cdn.modesens.com/umedia/1605068s",
+            name:"Carbon38",
+            productID:"a1"
+        },
+        {
+            img1:"https://cdn.modesens.com/uicon/402756-1596625099s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1605102s",
+            name:"COStores",
+            productID:"a2"
+        },
+        {
+            img1:"https://cdn.modesens.com/uicon/524814-1617876665s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1605090s",
+            name:"LaDoubleJ",
+            productID:"a3"
+        },
+
+        {
+            img1:"https://cdn.modesens.com/uicon/402756-1596625099s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1605075s",
+            name:"gfpr7jk28w",
+            productID:"a4"
+        },
+        {
+            img1:"https://cdn.modesens.com/uicon/524808-1617874292s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1604338s",
+            name:"Urban",
+            productID:"a5"
+        },
+        {
+            img1:"https://cdn.modesens.com/uicon/402756-1596625099s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1604355s",
+            name:"COSstores",
+            productID:"a6"
+        },
+        {
+            img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+            img2:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/h/ahtufrgfe19523_1_e0416277.jpg?rnd=20200526195200",
+            name:"eastern_earl",
+            productID:"a7"
+        },
+        {
+            img1:"https://cdn.modesens.com/uicon/395123-1595414610s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1604366s",
+            name:"coltorti",
+            productID:"a8"
+        },
+        {
+            img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+            img2:"https://cdn.modesens.com/umedia/1604654s",
+            name:"eastern_earl",
+            productID:"a9"
+        },
+
+
+
+        {
+    
+    name: "chil pill",
+    
+    
+    productID: "women7",
+   
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/t/w/twentydressesmix_dr0769_1_90caf4b3.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "supersoft paly",
+    
+    
+    productID: "women8",
+    
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/k/a/kazo-123019black_1_85f6e006.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "balck bella",
+    
+    
+    productID: "women9",
+    
+    img1:"https://cdn.modesens.com/uicon/402756-1596625099s?w=100&",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/r/t/rtor0011_1_67335460.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "woman cotton",
+    
+    
+    productID: "women10",
+    
+    img1:"https://cdn.modesens.com/uicon/276698-1596189133s?w=100&&",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/h/ahtufrgfe19523_1_e0416277.jpg?rnd=20200526195200"
+  },
+  {
+    
+    name: "off white",
+    
+    
+    productID: "women11",
+    
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/c/achwkea595-1_dc090828.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "supersoft",
+    
+    
+    productID: "women12",
+   
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/3/238451501_1_43bf9c90.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "Curev",
+    
+    productID: "women13",
+   
+    img1:"https://cdn.modesens.com/uicon/276698-1596189133s?w=100&&",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/r/t/rtor0011_1_67335460.jpg?rnd=20200526195200",
+  },
+  {
+    
+    name: "Mega striple",
+    
+    productID: "women14",
+    
+    img1:"https://cdn.modesens.com/uicon/48124-1594892037s?w=100&",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/o/_/o_119512401_1_e2d71be7.jpg?rnd=20200526195200",
+  },
+  {
+   
+    name: "balck bella",
+    
+    productID: "women15",
+    
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/4/146117301_1_7fcd0574.jpg?rnd=20200526195200",
+  },
+  {
+  
+    name: "chil pillt",
+   
+    productID: "women16",
+   
+    img1:"https://lh3.googleusercontent.com/a/AATXAJxgVnbtRYF_KJAnZh7xsPWF7lMjXxip-SFOm7mY=s96-c",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/c/achwsivc466_1_a6c9da54.jpg?rnd=20200526195200",
+  },
+  {
+   
+    name: "plus size",
+  
+    productID: "women17",
+   
+    img1:"https://cdn.modesens.com/uicon/402756-1596625099s?w=100&",
+    img2: "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/i/n/ind158-pnk_1_3dc181e4.jpg?rnd=20200526195200",
+  },
+        {
+            img1:"https://cdn.modesens.com/uicon/48124-1594892037s?w=100&",
+            img2:"https://cdn.modesens.com/umedia/1604654s",
+            name:"NET-A-PORTER",
+            productID:"a10",
+        },
+        ]
+       
+    let productsContainer=document.getElementById("products");
+
+    let cartLS=JSON.parse(localStorage.getItem("cart-page")) || [];
+
+    function displayProducts(productData){
+        productsContainer.innerHTML="";
+        productData.forEach(function(element){
+            let product1=document.createElement("div");
+            product1.setAttribute("class","block");
+            let product2=document.createElement("div");
+            product2.setAttribute("class","top_block");
+            let product3=document.createElement("div");
+            let product4=document.createElement("div");
+            let product5=document.createElement("div");
+            product5.setAttribute("class","normal_block");
+
+            let img11=document.createElement("img");
+            img11.src=element.img1;
+            img11.setAttribute('class','image1');
+
+            let img12=document.createElement("img");
+            img12.src=element.img2;
+            img12.setAttribute('class','image2');
+            // console.log(img12);
+
+            let name=document.createElement("h3");
+            name.innerText=element.name;
+
+            let addToCart=document.createElement("button");
+            addToCart.innerText="Unfollow And Delete";
+            addToCart.addEventListener("click",function(){ 
+                Deleted(element.productID)  ;
+            })
+
+            product3.append(img11, name); 
+            product4.append(addToCart)
+            product2.append(product3,product4);
+            
+            product5.append(img12); 
+            product1.append(product2,product5);
+            productsContainer.append(product1);
+        })
+    }
+    displayProducts(cartLS);
+
+    
+    function Deleted(id){
+        let deleted=cartLS.filter(function(el){
+            return el.productID != id;
+        })
+        cartLS=deleted;
+        localStorage.setItem("cart-page",JSON.stringify(cartLS));
+        displayProducts(cartLS);
+    }
+</script>
