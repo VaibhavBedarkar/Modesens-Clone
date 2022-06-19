@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="navBar">
+        <div class="logo">MODESENS</div>
+        <a href="index.html">
+            <div class="menu">HOME</div>
+        </a>
+        <a href="women.html">
+            <div class="menu">WOMEN</div>
+        </a>
+        <a href="mens.html">
+            <div class="menu">MEN</div>
+        </a>
+        <a href="beauty.html">
+            <div class="menu">BEAUTY</div>
+        </a>
+        <a href="kids.html">
+            <div class="menu">KIDS</div>
+        </a>
+        <a href="offer.html">
+            <div class="menu">OFFERS</div>
+        </a>
+        <a href="designer.html">
+            <div class="menu">DESIGNERS</div>
+        </a>
+        <a href="community.html">
+            <div class="menu">COMMUNITY</div>
+        </a>
+        <a href="whyMod.html">
+            <div class="menu">WHY MODESENS</div>
+        </a>
+            <a href="cart.html">
+                <div class="material-icons">shopping_bag</div>
+            </a>      
+    </div>
+
+    <div class="offer">
+      <h2>
+        Special Offers From Your Favorite Stores
+      </h2>
+
+    </div>
+    
+
+    <div id="offerDataList">
+    </div>
+
+
+    <!-- features -->
+    <footer id="features">
+      <div>
+          <span class="material-icons">local_shipping</span>
+          <h3>Free global returns on eligible items</h3>
+          <p>We offer free returns collection on all orders worldwide. Some Items are non-returnable.</p>
+      </div>
+      <div>
+          <span class="material-icons">auto_awesome</span>
+          <h3>4.7/5 stars and 25,000+ reviews</h3>
+          <p>100% authentic brands and original styles. You know you can trust us.</p>
+      </div>
+      <div>
+          <span class="material-icons">person</span>
+          <h3>Not ready to commit?</h3>
+          <p>No worries, you can place an order without an account. Head to checkout and continue as a guest.</p>
+      </div>
+  </footer>
+</body>
+
+</html>
+<script>
+    let offerData = [
+    {
+    img: "https://cdn.modesens.com/merchant/ssense-logo.png?w=400&",
+    p: "Enjoy UPTO 80% Off Select Styles",
+    date: "26/03/2022",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/ssense-logo.png?w=400&",
+    p: "Take advantage of shopping on #4000+",
+    date: "9/11/2022",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/NAP.jpg?w=400&",
+    date: "04/08/2022",
+    p: "Enjoy UPTO 80% Off Select Styles",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/NAP.jpg?w=400&",
+    date: "08/02/2022",
+    p: "Enjoy UPTO 50% Off Select Styles",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/NAP.jpg?w=400&",
+    date: "10/05/2022",
+    p: "Enjoy UPTO 10% Off Select Styles",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/neiman_marcus-1470104251?w=400&",
+    date: "09/01/2021",
+    p: "Get a rose Gold face roller with $150 spend",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/neiman_marcus-1470104251?w=400&",
+    date: "09/11/2021",
+    p: "Get a La Mer Gift with $350 spend",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/neiman_marcus-1470104251?w=400&",
+    date: "19/11/2022",
+    p: "Get upto $1250 gift card with shopping",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/neiman_marcus-1470104251?w=400&",
+    date: "04/02/2021",
+    p: "Enjoy UPTO 80% Off Select Styles",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/farfetch-logo.jpg?w=400&",
+    p: "Enjoy UPTO 80% Off Select Styles",
+    date: "26/09/2022",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/farfetch-logo.jpg?w=400&",
+    p: "Enjoy UPTO 30% Off Select Styles",
+    date: "16/10/2022",
+  },
+  {
+    img: "https://cdn.modesens.com/merchant/farfetch-logo.jpg?w=400&",
+    p: "Enjoy UPTO 70% Off Select Styles",
+    date: "09/11/2021",
+  },
+  ];
+
+
+    offerData.map(function (elem) {
+        let box = document.createElement("div");
+        box.style.border= "1px solid gray";
+        box.style.borderRadius= "8px";
+        box.style.width = "300px";
+        box.style.padding="20px";
+        box.style.display="flex";
+        box.style.alignItems="center";
+        box.style.flexDirection="column";
+
+        let avatar = document.createElement("img")
+        avatar.setAttribute("src", elem.img);
+        avatar.style.width = "80%";
+        avatar.style.height = "100px";
+        avatar.style.margin="auto";      
+
+        let shopNow = document.createElement("div")
+        shopNow.innerHTML = "<a href=dashboard.html><div class=shopNow><h4>Shop Now</h4></div><a>"; 
+
+        let name = document.createElement("p")
+        name.innerText = elem.p;
+        name.style.textAlign = "center";
+        name.style.fontWeight="bold";
+        name.style.marginTop="10px"
+
+        let price = document.createElement("p")
+        price.innerText = "Offer Valid till: "+ elem.date;
+        price.style.textAlign = "center"
+        price.style.marginTop = "20px"
+        box.append(avatar,name,shopNow,price);
+        document.querySelector("#offerDataList").append(box)
+    })
+</script>

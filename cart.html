@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logo">MODESENS</div>
+        <a href="index.html">
+            <div class="menu">HOME</div>
+        </a>
+        <a href="women.html">
+            <div class="menu">WOMEN</div>
+        </a>
+        <a href="men.html">
+            <div class="menu">MEN</div>
+        </a>
+        <a href="beauty.html">
+            <div class="menu">BEAUTY</div>
+        </a>
+        <a href="kids.html">
+            <div class="menu">KIDS</div>
+        </a>
+        <a href="offer.html">
+            <div class="menu">OFFERS</div>
+        </a>
+        <a href="designer.html">
+            <div class="menu">DESIGNERS</div>
+        </a>
+        <a href="community.html">
+            <div class="menu">COMMUNITY</div>
+        </a>
+        <a href="whyMod.html">
+            <div class="menu">WHY MODESENS</div>
+        </a>
+        <a href="cart.html">
+            <div class="material-icons">shopping_bag</div>
+        </a>
+    </div>
+
+
+    <div class="cartDetails">
+        <h3>Cart Summary</h3>
+        <hr>
+        <table>
+            <thead>
+                <tr></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <hr>
+        <button id="Submit" type="submit" onclick="window.location.href='payment.html'">Checkout</button>
+    </div>
+
+    <!-- features -->
+    <footer id="features">
+        <div>
+            <span class="material-icons">local_shipping</span>
+            <h3>Free global returns on eligible items</h3>
+            <p>We offer free returns collection on all orders worldwide. Some Items are non-returnable.</p>
+        </div>
+        <div>
+            <span class="material-icons">auto_awesome</span>
+            <h3>4.7/5 stars and 25,000+ reviews</h3>
+            <p>100% authentic brands and original styles. You know you can trust us.</p>
+        </div>
+        <div>
+            <span class="material-icons">person</span>
+            <h3>Not ready to commit?</h3>
+            <p>No worries, you can place an order without an account. Head to checkout and continue as a guest.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    let cartArr = JSON.parse(localStorage.getItem("cartData"));
+
+
+    document.querySelector("tbody").innerHTML = " ";
+
+    cartArr.forEach(function (element) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement("img");
+        td1.setAttribute("src", element.productImg);
+        td1.style.width = "80px";
+        td1.style.height = "80px";
+
+        let td2 = document.createElement("td");
+        td2.innerText = element.productName;
+        td2.style.marginRight = "100px";
+
+        let td3 = document.createElement("td");
+        td3.innerText = element.productPrice;
+
+        let td4 = document.createElement("hr");
+
+        tr.append(td1, td2, td3, td4);
+
+        document.querySelector("tbody").append(tr);
+
+    });
+
+
+
+</script>
