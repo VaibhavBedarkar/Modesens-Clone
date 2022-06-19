@@ -1,0 +1,104 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    border: 1px solid transparent;
+   width: 100%;
+   display: flex;
+
+}
+h1,h1+p{
+    margin-left: 317px;
+}
+#sidebar{
+    width: 20%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+i+div{
+    font-size: 18px;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+input{
+    padding: 10px;
+    width: 85%;
+    position:relative;
+    margin-top: 3px;
+}
+#search{
+    left: 215px;
+    cursor: pointer;
+    top: 124px;
+    font-size: 24px;
+    position: absolute;
+}
+img{
+    width: 65%;
+}
+#container{
+    border: 1px solid transparent;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    font-family: sans-serif;
+}
+h3+p{
+    font-size: 13px;
+    color: gray;
+
+}
+button{
+    background: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+#container >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(241, 240, 240);
+}
+#container div div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Heart */
+.far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 300;
+    position: relative;
+    left: 100px;
+    top: 13px;
+    cursor: pointer;
+    font-size: 23px;
+}
+.far:hover{
+    color: red;
+}
+#features{
+    width: 100%;
+    display: flex;
+    background-color: rgba(140, 138, 138, 0.226);
+    margin: 0px 0px;
+    text-align: center;
+    padding: 40px;
+    justify-content: space-around;
+    margin-top: 40px;
+    bottom: 0%;
+}
+span{
+    margin-bottom: 20px;
+}
+
