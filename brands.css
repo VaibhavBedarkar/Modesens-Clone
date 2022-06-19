@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+#container{
+width:65%;
+text-align: center;
+margin:auto;
+} 
+.name{
+display:flex;
+}
+.name>div{
+width:33.33%;
+text-align: left;
+}
+#name1{
+/* display:flex; */
+display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap:10px 20px;
+}
+#name1>div{
+display:flex;
+}
+
+#top{
+height:250px;
+line-height: 35px;
+}
+.like{
+background-color: white;
+border:none;
+width:20px;
+}

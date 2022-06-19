@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids</title>
+    <link rel="stylesheet" href="kids.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+        .crauser{
+            margin-left: 180px;
+            width: 100%;
+        }
+    .crauser img{
+        width: 80%;
+    }
+
+.crauser>button{
+    position: absolute;
+    top: 200px;
+    font-size: 50px;
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+background-color: white;
+    
+}
+.crauser>button:hover{
+    background-color: black ;
+    color: white;
+}
+.crauser>button:nth-child(2){
+    left: 91px;
+}
+.crauser>button:nth-child(3){
+    right:20px;
+}
+        #partners{
+            text-align: center;
+        }
+        h1+p{
+            font-size: larger;
+        }
+        #brand{
+            display:grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(2,100px);
+            margin: auto;
+            width:90%;
+        }
+        #offer{
+            margin: 100px auto 50px auto;
+            border: 1px solid transparent;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,800px);
+        }
+        #offer img,#Trending img{
+            width:100%;
+        }
+        #offer img:first-child{
+            height: 78%;
+        }
+        #offer >div>div {
+            
+    border: 1px solid transparent;
+    text-align: center;
+
+        }
+        #Btn{
+            padding: 0px 30px;
+            cursor:pointer;
+        }
+        h2{
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 4px solid #f8f7f6;
+            line-height: 0.1em;
+            /* margin: 10px 0 20px;  */
+            margin:60px 0 0 0 ;
+        } 
+        
+        h2 span { 
+             background:#fff; 
+            padding:0 10px; 
+        }
+        
+        #Trending{
+            margin: 100px auto 50px auto;
+            border: 1px solid transparent;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,606px);
+        }
+        #Trending>div{
+            border: 1px solid transparent;
+           
+        }
+        #Trending>div>div,#recently>div>div{
+            border: 1px solid transparent;
+            text-align: center;
+        }
+        #Trending > div >img,#recently>div>img{
+            height: 69%;
+            width: 100%;
+        }
+     
+        h4{
+            text-align: center;
+        }
+        #recently{
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,606px);
+            width: 90%;
+            margin: 100px auto 50px auto;
+        }
+        
+        h4{
+            text-align: center;
+        }
+        
+        #offerBtn{
+            background: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+        }
+      .navBar {
+            display: flex;
+            height: 50px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 26px;
+            margin: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+ 
+        .menu {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+ 
+        .menu:hover {
+            text-decoration: underline;
+        }
+ 
+        .material-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+ 
+        .tool {
+            display: flex;
+            margin: 20px 20px;
+        }
+ 
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+ 
+<body>
+
+    <!-- NavBar -->
+    <div class="navBar">
+        <div class="logo">MODESENS</div>
+        <a href="index.html">
+            <div class="menu">HOME</div>
+        </a>
+        <a href="women.html">
+            <div class="menu">WOMEN</div>
+        </a>
+        <a href="mens.html">
+            <div class="menu">MEN</div>
+        </a>
+        <a href="beauty.html">
+            <div class="menu">BEAUTY</div>
+        </a>
+        <a href="kids.html">
+            <div class="menu">KIDS</div>
+        </a>
+        <a href="offer.html">
+            <div class="menu">OFFERS</div>
+        </a>
+        <a href="designer.html">
+            <div class="menu">DESIGNERS</div>
+        </a>
+        <a href="community.html">
+            <div class="menu">COMMUNITY</div>
+        </a>
+        <a href="whyMod.html">
+            <div class="menu">WHY MODESENS</div>
+        </a>
+        <div class="tool">
+            <div class="material-icons">person</div>
+            <a href="cart.html">
+                <div class="material-icons">shopping_bag</div>
+            </a>
+        </div>
+    </div>
+
+    
+        <div class="crauser">
+            <a href="womenItem.html"><img src="https://modesens.com/banner/12476/getimg/?img=%2Fbanner%2F20220615-modesens-SSENSE-1140x400-EN.jpg" alt="error"></a>
+            <button><</button>
+            <button>></button>
+        </div>
+    <div id="partners">
+        <h1>Featured Partners</h1>
+        <p>Compare across our 500+ partner stores to find the products you want at the best price.</p>
+    </div> 
+    <div id="brand">
+        <div><img src="https://cdn.modesens.com/banner/20211014-NET-A-PORTER-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-MR-PORTER-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-FARFETCH-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-MATCHESFASHION-logo.png"></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-LUISAVIAROMA-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-SHOPBOP-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-FWRD-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-24S-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-SSENSE-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-SSENSE-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-NORDSTROM-logo.png" ></div>
+        <div><img src="https://cdn.modesens.com/banner/20211014-HARVEY-NICHOLS-logo.png" ></div>
+    </div>
+    <h2><span>Special Offer</span></h2>
+    <div id="offer">
+
+    </div>   
+    <h2><span>Trending Now</span></h2>
+    <div id="Trending">
+
+    </div>
+    <h2><span>Recently View</span></h2>
+    <div id="recently">
+        
+
+    </div>
+    <footer id="features">
+        <div>
+            <span class="material-icons">local_shipping</span>
+            <h3>Free global returns on eligible items</h3>
+            <p>We offer free returns collection on all orders worldwide. Some Items are non-returnable.</p>
+        </div>
+        <div>
+            <span class="material-icons">auto_awesome</span>
+            <h3>4.7/5 stars and 25,000+ reviews</h3>
+            <p>100% authentic brands and original styles. You know you can trust us.</p>
+        </div>
+        <div>
+            <span class="material-icons">person</span>
+            <h3>Not ready to commit?</h3>
+            <p>No worries, you can place an order without an account. Head to checkout and continue as a guest.</p>
+        </div>
+    </footer>
+    
+   
+    
+    
+</body>
+</html>
+<script src="kids.js"></script>
