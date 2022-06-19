@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODESENS | Cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <div class="navBar">
+        <div class="material-icons">verified_user</div>
+        <h4>Secured Checkout</h4>
+        <div class="logo">MODESENS</div>
+        <div class="material-icons">call</div>
+        <h4> Need Help? +1 (646-791-3768) </h4>
+    </div>
+
+    <!-- Payment -->
+    <div id="payment">
+        <div class="shipDetails">
+            <form class="details">
+                <h2>Delivery Details</h2>
+                <label>Name*</label>
+                <input id="customerName" type="text" placeholder="Full Name">
+                <label>Email*</label>
+                <input id="customerEmail" type="email" required="true" placeholder="Email">
+                <label>Address*</label>
+                <input id="customerAddress" type="text" required="true" placeholder="Delivery Address">
+                <label>City*</label>
+                <input id="customerCity" type="text" required="true" placeholder="City">
+                <label>State*</label>
+                <input id="customerState" type="text" required="true" placeholder="State">
+                <label> Zip-Code *</label>
+                <input id="customerzip" type="text" required="true" placeholder="Zip-Code">
+            </form>
+
+            <form class="details">
+                <h2>Payment Details</h2>
+                <label> Card Holder Name</label>
+                <input id="cardHolderName" type="text" placeholder="CARDHOLDER NAME">
+                <label> Card Number</label>
+                <input id="cardNumber" type="number" maxlength="12" required="true" placeholder="CARD NUMBER">
+                <label> Expiry Date</label>
+                <input id="cardExp" type="number" required="true" placeholder="MM/YY">
+                <label> CVV</label>
+                <input id="cardCvv" type="number" maxlength="3" minlength="3" required="true" placeholder="CVV">
+
+            </form>
+        </div>
+        <div class="cartDetails">
+            <h3>Cart Summary</h3>
+            <hr>
+            <table>
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <hr>
+            <h3 id="cartValue"></h3>
+            <h3 id="discountValue"></h3>
+            <h3 id="totalValue"></h3>
+            <div class="promo">
+                <input type="text" id="promoCode" placeholder="Enter Promo code">
+                <button id="applyPromo">Apply</button>
+            </div>
+            <input id="Submit" type="submit" onclick="">
+        </div>
+    </div>
+    </div>
+
+    <!-- features -->
+    <footer id="features">
+        <div>
+            <span class="material-icons">local_shipping</span>
+            <h3>Free global returns on eligible items</h3>
+            <p>We offer free returns collection on all orders worldwide. Some Items are non-returnable.</p>
+        </div>
+        <div>
+            <span class="material-icons">auto_awesome</span>
+            <h3>4.7/5 stars and 25,000+ reviews</h3>
+            <p>100% authentic brands and original styles. You know you can trust us.</p>
+        </div>
+        <div>
+            <span class="material-icons">person</span>
+            <h3>Not ready to commit?</h3>
+            <p>No worries, you can place an order without an account. Head to checkout and continue as a guest.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+
+
+    let cartArr = JSON.parse(localStorage.getItem("cartData"));
+
+    document.querySelector("tbody").innerHTML = " ";
+
+    cartArr.forEach(function (element) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement("img");
+        td1.setAttribute("src", element.productImg);
+        td1.style.width = "80px";
+        td1.style.height = "80px";
+
+        let td2 = document.createElement("td");
+        td2.innerText = element.productName;
+        td2.style.marginRight = "100px";
+
+        let td3 = document.createElement("td");
+        td3.innerText = element.productPrice;
+
+        let td4 = document.createElement("hr");
+
+        tr.append(td1, td2, td3, td4);
+
+        document.querySelector("tbody").append(tr);
+
+    });
+
+    let cartPrice = cartArr.map(function (element) {
+        return element.productPrice;
+    }).reduce(function (acc, curr) {
+        return acc + curr;
+    });
+
+    let cartValue = document.querySelector("#cartValue");
+    cartValue.innerHTML = "Cart Value: $ " + cartPrice;
+
+
+    let couponCode = {
+        Flat60: 0.6,
+        Flat50: 0.5,
+        Flat40: 0.4,
+        Flat30: 0.3,
+        Flat20: 0.2,
+        Flat10: 0.1
+    }
+
+    let cardDetails = {
+        cardHolder: "Vaibhav Bedarkar",
+        cardNum: 123456789876,
+        exp: 1223,
+        cvv: 123
+    }
+
+    let applyPromo = document.querySelector("#applyPromo");
+    let promoCode = document.querySelector("#promoCode");
+
+    applyPromo.addEventListener("click", function () {
+
+        let discountValue = document.querySelector("#discountValue");
+        let totalValue = document.querySelector("#totalValue");
+
+        let key = promoCode.value;
+        let discValue = couponCode[key];
+
+        if (discValue != undefined) {
+            let disc = cartPrice * discValue;
+            discountValue.innerHTML = "-" + disc.toFixed(2);
+
+            let finalValue = cartPrice - disc;
+            totalValue.innerHTML = "Total $: " + finalValue.toFixed(2);
+        } else {
+            alert("Invalid PromoCode");
+        }
+    });
+
+
+    let Submit = document.querySelector("#Submit");
+
+    Submit.addEventListener("click", function () {
+
+        let custName = document.querySelector("#customerName").value;
+        let custEmail = document.querySelector("#customerEmail").value;
+        let customerAddress = document.querySelector("#customerAddress").value;
+        let customerCity = document.querySelector("#customerCity").value;
+        let customerState = document.querySelector("#customerState").value;
+        let customerzip = document.querySelector("#customerzip").value;
+        let cardHolderName = document.querySelector("#cardHolderName").value;
+        let cardNumber = document.querySelector("#cardNumber").value;
+        let cardExp = document.querySelector("#cardExp").value;
+        let cardCvv = document.querySelector("#cardCvv").value;
+
+        if (cardHolderName == cardDetails["cardHolder"] && cardNumber == cardDetails["cardNum"] && cardExp == cardDetails["exp"] && cardCvv == cardDetails["cvv"]) {
+            alert("Order Place Successfully!");
+        } else {
+            alert("Invalid Card Details");
+        }
+
+    })
+
+
+</script>
