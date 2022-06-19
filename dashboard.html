@@ -9,30 +9,91 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
  <link rel="stylesheet" href="navbar.css">
  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        .navBar {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.logo {
+  font-size: 26px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+ 
+.menu {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+ 
+.menu:hover {
+  text-decoration: underline;
+}
+ 
+.material-icons {
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.tool {
+  width: 100%;
+  display: flex;
+  margin: 20px 20px;
+}
+ 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+    </style>
 </head>
 <body onload="show()"  > 
-    <div id="cont_nav">
-        
-        <div id="navbarDash">
-            <div><h2>MODESENS</h2>  </div>
-            <div>WOMEN</div>
-            <div>MEN</div>
-            <div>BEAUTY</div>
-            <div>KIDS</div>
-            <div>HOME</div>
-            <div>OFFERS</div>
-            <div>DESIGNERS</div>
-            <div>COMMUNITY</div>
-            <div>WHYMODESENS</div>
-            
-
-            <div><i class="material-icons">shopping_bag</i></div>
-            <div><i class="material-icons">logout</i></div>
-            
-            
-               
-
+   <div class="navBar">
+        <div class="logo">MODESENS</div>
+        <a href="index.html">
+            <div class="menu">HOME</div>
+        </a>
+        <a href="women.html">
+            <div class="menu">WOMEN</div>
+        </a>
+        <a href="men.html">
+            <div class="menu">MEN</div>
+        </a>
+        <a href="beauty.html">
+            <div class="menu">BEAUTY</div>
+        </a>
+        <a href="kids.html">
+            <div class="menu">KIDS</div>
+        </a>
+        <a href="offer.html">
+            <div class="menu">OFFERS</div>
+        </a>
+        <a href="designer.html">
+            <div class="menu">DESIGNERS</div>
+        </a>
+        <a href="community.html">
+            <div class="menu">COMMUNITY</div>
+        </a>
+        <a href="whyMod.html">
+            <div class="menu">WHY MODESENS</div>
+        </a>
+        <a href="cart.html">
+            <div class="material-icons">shopping_bag</div>
+        </a>
     </div>
+
     <!--  end of navbar style  -->
 
 
