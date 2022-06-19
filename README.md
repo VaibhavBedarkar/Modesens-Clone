@@ -22,6 +22,8 @@ This project is a clone of Modesens website. ModeSens is your digital shopping a
 | ------|------ |
 | Higher Order Function| map(), reduce(), filter() and forEach()
 | DOM | Document Object Model manipulation enables us to change behavior |
+| localStorage |It is used to store data in browser memory |
+| Javascript Object |It is used to store data in the form of key-valye pair |
 
 ## Development Team
 | Team Member | In-charge |
