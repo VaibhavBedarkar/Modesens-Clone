@@ -1,0 +1,205 @@
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.material-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tool {
+  width: 100%;
+  display: flex;
+  margin: 20px 20px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#offerDataList {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(auto);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+#payment {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+.details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+}
+
+.shipDetails {
+  width: 90%;
+  margin-left: 40px;
+}
+form {
+  padding: 20px;
+}
+
+label {
+  margin: 10px 0px 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+}
+.cartDetails {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+}
+#Submit {
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#features {
+  width: 100%;
+  display: flex;
+  background-color: rgba(140, 138, 138, 0.226);
+  margin: 0px 0px;
+  text-align: center;
+  padding: 40px;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+span {
+  margin-bottom: 20px;
+}
+
+.offer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.shopNow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.shopNow:hover {
+  background-color: black;
+  color: white;
+}
+
+table {
+  margin: auto;
+  width: 70%;
+}
+
+#cartValue {
+    text-align: end;
+    margin: 20px;
+  }
+
+.promo{
+    width:70%;
+    background-color: rgba(128, 128, 128, 0.279);
+    margin: auto;
+    padding:20px;
+    display: flex;
+}
+#promoCode{
+    width: 60%;
+    padding: 10px;
+}
+
+.promo>#applyPromo{
+    width:40%;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: rgb(42, 8, 177);
+    color: white;
+    border: transparent;
+}
+
+#discountValue{
+  text-align: end;
+  margin: 20px;
+  color: olivedrab;
+}
+
+#totalValue{
+  text-align: end;
+  margin: 20px;
+}
