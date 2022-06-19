@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="brands.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+</head>
+<body>
+
+
+    <div class="navBar">
+
+      <div class="logo">MODESENS</div>
+
+      <a href="index.html">
+
+          <div class="menu">HOME</div>
+
+      </a>
+
+      <a href="women.html">
+
+          <div class="menu">WOMEN</div>
+
+      </a>
+
+      <a href="men.html">
+
+          <div class="menu">MEN</div>
+
+      </a>
+
+      <a href="beauty.html">
+
+          <div class="menu">BEAUTY</div>
+
+      </a>
+
+      <a href="kids.html">
+
+          <div class="menu">KIDS</div>
+
+      </a>
+
+      <a href="offer.html">
+
+          <div class="menu">OFFERS</div>
+
+      </a>
+
+      <a href="designer.html">
+
+          <div class="menu">DESIGNERS</div>
+
+      </a>
+
+      <a href="community.html">
+
+          <div class="menu">COMMUNITY</div>
+
+      </a>
+
+      <a href="whyMod.html">
+
+          <div class="menu">WHY MODESENS</div>
+
+      </a>
+
+      <a href="cart.html">
+
+          <div class="material-icons">shopping_bag</div>
+
+      </a>
+
+  </div>
+   
+   
+   
+   
+   
+    
+
+
+
+
+    <div id="container">
+      <div id="top">
+        <h1>We Feature Top Men's Designers From Around The World</h1>
+        <p style="color:grey; font-size:18px">Customize your shopping experience and curate your wardrobe with ease by selecting favorites designers, blocking designers or adding new arrivals alerts.</p>
+        <!-- <input id="filter2" type="text" placeholder="Enter Brand Name"> 🔍 -->
+        <h1>Your Favourite Designers</h1>
+        <p style="color:grey; font-size:18px">Did you know? When browsing, filter by Designer Group “Favorite Designers” to view products exclusively from your favorite designers.</p>
+      </div>  
+        <div id="name1"></div>
+    
+      </div>
+      
+
+<!-- Footer -->
+  <hr>
+
+<!-- start of footer -->
+<div id="footer">
+<div>
+  <h2>CUSTOMER CARE</h2>
+  
+      <p>Shopper Protection</p>
+      <p>Loyalty Program</p>
+      <p>Help Center</p>
+      <p>Size Guides</p>
+      <p>Contact Us / Feedback</p>
+      <p>Shipping / Returns</p>
+  
+</div>
+
+<div> 
+<h2>INFORMATION</h2>
+<p>About Us</p>
+<p>Influencer Program</p>
+<p>Partner Stores</p>
+<p>Sitemap</p>
+
+</div> 
+
+<div>
+  <h2>LEGAL</h2>
+  <p>Terms Of Use</p>
+  <p>Disclosure</p>
+  <p>Privacy Policy</p>
+  <p>Community Guidelines</p>
+</div>
+
+<div>
+  <h2>CONNECT WITH US</h2>
+  <p><i class="material-icons">phone_android</i><h2>Android User</h2></p>
+  <p><i class="material-icons">phone_iphone</i><h2>Apple User</h2></p>
+  <p><i class="material-icons">travel_explore</i><h2>Add to Browser</h2></p>
+
+</div>
+
+
+<div>
+  <h2>NEWSLETTER SIGN UP</h2>
+  <input type="text" placeholder="Email Address" id="input">
+  <p><i class="material-icons">check_box</i><h2>WOMENS</h2></p>
+  <p><i class="material-icons">check_box</i><h2>MENS</h2></p>
+  <button class="btn">Submit</button>
+
+</div>
+
+
+</div>
+
+<!-- end of footer -->
+
+<!-- ending of page with logo -->
+<hr>
+
+<div id="endlogo">
+  <hr>
+
+  <div id="endlogo">
+  
+       <div><img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494475.png?token=exp=1655229343~hmac=6ff2d31250ff2a102ee4ff14510b1459" alt=""></div>
+  <div><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt=""></div>
+  <div><img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494477.png?token=exp=1655229343~hmac=3d955192adc665032a12787dd2495fd4" alt=""></div>
+  <div><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670101.png?token=exp=1655229919~hmac=fc3e6550560909ca7b4bfb0c609f52b6" alt=""></div>
+  <div><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670176.png?token=exp=1655229959~hmac=7f9c5b0c91fc405736060281c64e3fc9" alt=""></div>
+  </div>
+  
+  
+</div>
+
+
+</body>
+</html>
+
+
+
+<script>
+
+let cartLS=JSON.parse(localStorage.getItem("cart-page")) || [];
+
+
+  let brands=[
+    {name:"A",id:"a1"},
+    {name:"A & M",id:"a2"},
+    {name:"A A K S",id:"a3"},
+    {name:"A BATHING APE",id:"a4"},
+    {name:"A BETTET FEELING",id:"a5"},
+    {name:"A BY ANABELLE",id:"a6"},
+    {name:"A DB",id:"a7"},
+    {name:"B & ME",id:"a8"},
+    {name:"B BRENTANO",id:"a9"},
+    {name:"B BRIAN ATWOOD",id:"a10a"},
+    {name:"B LOVE",id:"a11"},
+    {name:"B NEW YORK",id:"a12"},
+    {name:"CABOTINE",id:"a13"},
+    {name:"CADDIS",id:"a14"},
+    {name:"CALIBAN",id:"a15"},
+    {name:"DANNER",id:"a16"},
+    {name:"DANNIELS",id:"a18"},
+    {name:"FABIOLAS",id:"a19"},
+    {name:"FABULOUS FURS",id:"a20"},
+    {name:"FACE LOVE",id:"a21"},
+    {name:"FACTORY",id:"a22"},
+    {name:"HANEY",id:"a23"},
+    {name:"HANDMADE",id:"a24"},
+    {name:"ADDIDAS",id:"a25"},
+    {name:"NIKE",id:"a26"},
+    {name:"DENIM",id:"a28"},
+    {name:"POLO",id:"a29"},
+    {name:"SILK",id:"a30"},
+    {name:"RESHIM",id:"a31"},
+    {name:"BOSS",id:"a32"},
+    {name:"PURE",id:"a33"},
+    {name:"SOCIAL",id:"a34"},
+    {name:"SWAG",id:"a35"},
+
+    {name:"Bangos",id:"a1"},
+    {name:"K & M",id:"a2"},
+    {name:"F A K S",id:"a3"},
+    {name:"A BATHING APE",id:"a4"},
+    {name:"A BETTET FEELING",id:"a5"},
+    {name:"A BY ANABELLE",id:"a6"},
+    {name:"A DB",id:"a7"},
+    {name:"B & ME",id:"a8"},
+    {name:"B BRENTANO",id:"a9"},
+    {name:"B BRIAN ATWOOD",id:"a10a"},
+    {name:"B LOVE",id:"a11"},
+    {name:"B NEW YORK",id:"a12"},
+    {name:"CABOTINE",id:"a13"},
+    {name:"CADDIS",id:"a14"},
+    {name:"CALIBAN",id:"a15"},
+    {name:"DANNER",id:"a16"},
+    {name:"DANNIELS",id:"a18"},
+    {name:"FABIOLAS",id:"a19"},
+    {name:"FABULOUS FURS",id:"a20"},
+    {name:"FACE LOVE",id:"a21"},
+    {name:"FACTORY",id:"a22"},
+    {name:"HANEY",id:"a23"},
+    {name:"HANDMADE",id:"a24"},
+    {name:"ADDIDAS",id:"a25"},
+    {name:"NIKE",id:"a26"},
+    {name:"DENIM",id:"a28"},
+    {name:"POLO",id:"a29"},
+    {name:"SILK",id:"a30"},
+    {name:"RESHIM",id:"a31"},
+    {name:"BOSS",id:"a32"},
+    {name:"PURE",id:"a33"},
+    {name:"SOCIAL",id:"a34"},
+    {name:"SWAG",id:"a35"},
+  ]
+  
+  function display(brands){
+    brands.forEach(function(element){
+      let product=document.createElement("div"); 
+
+      let name=document.createElement("h2");
+           name.innerText=element.name;
+
+      let addToCart=document.createElement("button");
+      addToCart.setAttribute("class","like");
+            addToCart.innerText="♡";
+            addToCart.addEventListener("click",function(){
+              addToCart.innerText="❤️";
+                // if(addToCartFunct(element.id)==true)
+                // {
+                //     addToCart.innerText="❤️";
+                //     // alert("Liked")
+                //     console.log(element.id);
+                //     cartLS.push(element);
+                //     localStorage.setItem("cart-page",JSON.stringify(cartLS));
+                //     console.log(cartLS);
+                // }
+                // else{
+                //   addToCart.innerText="❤️";
+                //     // alert("Aleready Liked")
+                // }
+             })
+             product.append(addToCart, name); 
+             document.getElementById("name1").append(product);
+          }
+    )}
+    
+    
+    //     function addToCartFunct(id){
+    //     for(i=0;i<cartLS.length;i++){
+    //         if(cartLS[i].id==id){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+    display(brands);
+ 
+</script>

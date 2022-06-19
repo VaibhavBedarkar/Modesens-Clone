@@ -1,0 +1,185 @@
+
+
+
+
+.navBar {
+
+  width: 100%;
+
+  display: flex;
+
+  height: 50px;
+
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+
+.logo {
+
+  font-size: 26px;
+
+  margin: 20px;
+
+  display: flex;
+
+  justify-content: flex-start;
+
+}
+
+
+.menu {
+
+  display: flex;
+
+  justify-content: center;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+
+.menu:hover {
+
+  text-decoration: underline;
+
+}
+
+
+.material-icons {
+
+  display: flex;
+
+  justify-content: space-around;
+
+}
+
+
+.tool {
+
+  width: 100%;
+
+  display: flex;
+
+  margin: 20px 20px;
+
+}
+
+
+a,
+
+a:hover,
+
+a:focus,
+
+a:active {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+
+
+#left
+{
+height: 60px;
+width: 30%;
+/* border: 1px solid black; */
+display: flex;
+
+}
+#left>div{
+margin: auto;
+
+}
+/* end of navbar style */
+
+/* START OF INSTALLATION */
+
+
+#install{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;
+/* gap: 20px; */
+/* border: 1px solid red; */
+
+width: 90%;
+margin: auto;
+
+}
+#install>div{
+/* border: 1px solid black; */
+text-align: center;
+margin-top: 20px;
+background-color: #f8f7f6 ;
+}
+.download{
+height: 400px;
+}
+#mobile{
+height: 500px;
+margin-top: 20px;
+}
+.btn{
+background-color: black;
+color: white;
+height: 30px;
+width: 180px;
+}
+/* end of installation */
+#line{
+text-align: center;
+font-size: x-large;
+font-weight: bold;
+}
+/* start of footer */
+#footer{
+height: 400px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+gap: 20px;
+}
+
+#footer>div{
+/* border: 1px solid violet; */
+text-align: center;
+}
+#footer>div>p{
+font-size: larger;
+font-weight: bold;
+}
+#footer>div>p:hover{
+color: red;
+}
+#input{
+height: 20px;
+width: 90%;
+}
+/* endlogos */
+#endlogo{
+display: flex;
+height: 40px;
+margin: auto;
+margin-top: 60px;
+width: 25%;
+border: 1px solid green;
+margin-left: 1350px;
+
+}
+#endlogo>div>img{
+height: 30px;
+margin: auto;
+margin-left: 50px;
+}
