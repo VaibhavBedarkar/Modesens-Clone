@@ -4,8 +4,9 @@ This project is a clone of Modesens website. ModeSens is your digital shopping a
 
 ## Features
 
-- Create and sigin user.
+- Sign-up and sigin user.
 - Apply filter and categorize data.
+- Add to cart functionality.
 - Add and shop products, offers and community section
 - Follow your favorite brands.
 
