@@ -33,7 +33,7 @@ This project is a clone of Modesens website. ModeSens is your digital shopping a
 | Vaibhav Bedarkar | Created Cart, offer and payment page |
 | Krushana Chavan |Signup and login page |
 | Prateek Soni | Dashboard and index page |
-| Dinesh Shendre| Community |
+| Dinesh Shendre| Community page, Brands and Why Modesens page |
 | Aayan Ahmed | Mens and Womens page |
 
 
