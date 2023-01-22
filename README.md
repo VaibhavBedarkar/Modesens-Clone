@@ -32,7 +32,7 @@ This project is a clone of Modesens website. ModeSens is your digital shopping a
 | Rabiya Naz | Created beauty and kids page |
 | Vaibhav Bedarkar | Created Cart, offer and payment page |
 | Krushana Chavan |Signup and login page |
-| Prateek Soni | Dashboard and Home page |Footer | Navbar
+| Prateek Soni | Dashboard and Home page |Footer and Navbar
 | Dinesh Shendre| Community page, Brands and Why Modesens page |
 | Aayan Ahmed | Mens and Womens page |
 
