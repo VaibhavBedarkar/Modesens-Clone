@@ -1,3 +1,7 @@
+# ModSena
+ModeSens is your fashion shopping assistant for the smart and informed. Established in 2015, ModeSens is led by a team of industry experts who developed a solution to the disconnected and crowded online shopping experience.
+
+
 # Team-ModSena
 
 This project is a clone of Modesens website. ModeSens is your digital shopping assistant dedicated to saving you time and money. With ModeSens, you can view a product's availability, price. We made use of Localstorage to store and retrieve data. 
