@@ -14,6 +14,18 @@ This project is a clone of Modesens website. ModeSens is your digital shopping a
 - Add and shop products, offers and community section
 - Follow your favorite brands.
 
+# Signin Page
+- To order any Product on our website user have to login and then can do any order .
+- Signin was achieved with the help of Local storage .
+- No user From same ID can signin , he/she have to enter different website .
+![signin](https://user-images.githubusercontent.com/105915891/213902414-5ac47d51-b794-427b-b99e-980bbf94d6b1.PNG)
+
+# Login Page
+- After successful signin For Authentication he has to login as a valid user so can to order and can visit website.
+- Login is Achieved by Local Storage and afer verfication he can proceed to vist website .
+![login](https://user-images.githubusercontent.com/105915891/213902478-e337ea44-6673-4e70-b320-10a6b4508616.PNG)
+
+
 ## Tech
 
 - [HTML] - It enables us to create structure for website
